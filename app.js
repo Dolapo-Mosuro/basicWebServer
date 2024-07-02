@@ -5,6 +5,10 @@ require("dotenv").config();
 const PORT = process.env.PORT;
 const app = express();
 
+app.get("/", (req, res) => {
+	res.send("Welcome to the API");
+});
+
 // Handling the /api/hello Route
 app.get("/api/hello", async (req, res) => {
 	const guestName = req.query.visitor_name || "Guest";
