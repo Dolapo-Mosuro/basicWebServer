@@ -11,7 +11,9 @@ const app = express();
 
 // Handling the /api/hello Route
 app.get("/api/hello", async (req, res) => {
-	const guestName = req.query.visitor_name || "Guest";
+	const guestName = req.query.visitor_name
+		? req.query.visitor_name.replace(/"/g, "")
+		: "Guest";
 	const guestIp =
 		req.headers["x-forwarded-for"] || req.connection.remoteAddress;
 
