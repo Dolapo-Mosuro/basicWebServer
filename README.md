@@ -26,7 +26,7 @@ To run this project locally, follow these steps:
 
 ## Prerequisites
 Node.js and npm are installed on your machine.
-Installation
+### Installation
 Clone the repository:
 
 ```
@@ -37,17 +37,21 @@ Navigate to the project directory:
 
 ```
 cd your-repo-name
-Install the dependencies:
 ```
+
+Install the dependencies:
 
 ```
 npm install
-Running the Server
-Start the server:
+
 ```
 
 
+## Running the Server
+Start the server:
+```
 npm start
+```
 The server will be running on http://localhost:3000. You can access the API endpoint by navigating to http://localhost:3000/api/hello?visitor_name=Mark.
 
 Environment Variables
@@ -59,7 +63,7 @@ API_KEY=your-api-key
 DB_URL=your-database-url
 
 ```
-## Accessing Environment Variables
+Accessing Environment Variables
 In your Node.js code, you can access these variables using process.env.VARIABLE_NAME.
 
 ## Deployment
@@ -75,5 +79,5 @@ curl "https://your-deployed-url.com/api/hello?visitor_name=Mark"
 ## Contributing
 To contribute to this project, please fork the repository and create a pull request with your changes.
 
-License
+## License
 This project is licensed under the MIT License.
