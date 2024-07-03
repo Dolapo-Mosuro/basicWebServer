@@ -1,10 +1,10 @@
 A basic web server that exposes an API endpoint and conforms to the criteria below:
 Endpoint: [GET] <example.com>/api/hello?visitor_name="Mark" (where <example.com> is your server origin)
 
-#API Deployment Guide
+##API Deployment Guide
 This project demonstrates setting up a basic web server with Node.js and Express, deploying it to a free hosting platform, and exposing an API endpoint.
 
-#API Overview
+##API Overview
 Endpoint
 [GET] /api/hello?visitor_name="Mark"
 
